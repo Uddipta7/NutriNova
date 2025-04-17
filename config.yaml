@@ -1,0 +1,13 @@
+credentials:
+  usernames:
+    user1:
+      email: user1@example.com
+      name: User One
+      password: 123  # Will be hashed automatically
+cookie:
+  name: some_cookie_name
+  key: some_signature_key
+  expiry_days: 30
+preauthorized:
+  emails:
+    - authorized_user@example.com
