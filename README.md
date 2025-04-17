@@ -66,3 +66,5 @@ NutriNova is an intelligent health companion that combines **nutrition analysis*
    Open your browser and navigate to:
    ```
    http://localhost:8501
+
+
