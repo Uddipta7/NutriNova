@@ -47,17 +47,22 @@ NutriNova is an intelligent health companion that combines **nutrition analysis*
    cd NutriNova
 2. Set Up Virtual Environment:
    Windows:
+   ```
    python -m venv venv
    venv\Scripts\activate
 3. Install Dependencies
+   ```
    pip install -r requirements.txt
 4. Configure API Keys
    Create .streamlit/secrets.toml file with:
+   ```
    NUTRITIONIX_APP_ID = "your_nutritionix_app_id"
    NUTRITIONIX_APP_KEY = "your_nutritionix_app_key"
    GEMINI_API_KEY = "your_google_gemini_key"
 5. Run the Application
+   ```
    streamlit run app.py
 6. Access the App
    Open your browser and navigate to:
+   ```
    http://localhost:8501
