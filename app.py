@@ -10,26 +10,26 @@ from PIL import Image
 import time
 
 # ----- Configuration Section -----
-# Initialize Gemini first to check available models
+
 try:
-    # Replace with your actual API keys
+    
     NUTRITIONIX_APP_ID = "86fa04aa"
     NUTRITIONIX_APP_KEY = "716e0158803762211a05efdf5ead8962"
     GEMINI_API_KEY = "AIzaSyCW0Zy224PWYZDE4e-sd2EfU-RXzDEtws4"
 
     genai.configure(api_key=GEMINI_API_KEY)
 
-    # List available models to debug
+   
     available_models = [m.name for m in genai.list_models()]
-    print("Available models:", available_models)  # Check your console output
+    print("Available models:", available_models) 
 
-    # Select the correct model name from available models
+ 
     if 'models/gemini-1.5-pro-latest' in available_models:
         MODEL_NAME = 'models/gemini-1.5-pro-latest'
     elif 'models/gemini-pro' in available_models:
         MODEL_NAME = 'models/gemini-pro'
     else:
-        MODEL_NAME = available_models[0]  # Fallback to first available model
+        MODEL_NAME = available_models[0]  
 except Exception as e:
     st.error(f"Failed to initialize Gemini: {str(e)}")
     st.stop()
@@ -62,7 +62,7 @@ def get_gemini_response(prompt):
         return response.text
     except Exception as e:
         error_msg = f"Gemini API Error: {str(e)}"
-        print(error_msg)  # Debug in console
+        print(error_msg)  
         return error_msg
 
 
