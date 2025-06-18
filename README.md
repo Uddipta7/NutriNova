@@ -9,6 +9,8 @@ NutriNova is an intelligent health companion that combines **nutrition analysis*
 - 🧠 Get personalized meal plans and health advice
 - 📈 Visualize progress with interactive dashboards
 
+🌐 **Live Demo:** [Click here to try the app](https://nutrinova-ga4g7a8oq7yi4yceyfmgbh.streamlit.app/)
+
 ## 🚀 Key Features
 | Feature | Description |
 |---------|-------------|
